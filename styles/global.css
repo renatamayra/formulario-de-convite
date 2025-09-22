@@ -9,16 +9,7 @@
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
 
-  --purple: #B259FF;
-  --fuschia: #FF59F9;
   --pink: #FF598B;
-  --orange: #FF8B59;
-  --yellow: #FFCD59;
-  --lime: #E1FF59;
-  --green: #59FF91;
-  --cyan: #59FFF9;
-  --navy: #6A59FF;
-  --danger: #FF5959;
 
   --input-base: #1C1F21;
   --input-stroke: #363B40;
@@ -39,18 +30,18 @@
  
 
   /* Estilos de texto */
-  --body-md: 400 1rem/100% var(--font-family);
-  --body-sm: 400 0.875rem/100% var(--font-family);
-  --body-xs: 400 0.75rem/100% var(--font-family);
+  --body-md: 300 1rem/1.4 var(--font-family);
+  --body-sm: 400 0.875rem/1.4 var(--font-family);
+  --body-xs: 400 0.75rem/1.4 var(--font-family);
  
-  --heading-md: 700 1.75rem/100% var(--font-baloo);
-  --heading-sm: 700 1.125rem/100% var(--font-baloo);
+  --heading-md: 700 1.75rem/1.4 var(--font-baloo);
+  --heading-sm: 700 1.125rem/1.4 var(--font-baloo);
 
-  --logo: 400 2.5rem/150% var(--font-leckerlione);
+  --text-logo: 400 2.5rem/1.0 var(--font-leckerlione);
 }
 
 body {
-   background-color: #1e1e1e;
+  background-color: #1e1e1e;
 
   font: var(--body-sm);
   color: var(--text-body);
