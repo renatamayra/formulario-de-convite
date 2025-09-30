@@ -59,3 +59,31 @@ input[type="radio"]:checked + .radio-card .icon-wrapper.presencial {
 input[type="radio"]:checked + .radio-card .icon-wrapper.online {
   background-image: url(../../assets/icons/video-2.svg);
 }
+
+.color-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: .75rem;
+  margin-top: 1rem;
+}
+
+.color-group input[type="radio"] {
+  display: none;
+}
+
+.color-group input:checked + .color-option {
+  outline: 2px solid var(--brand-mid);
+}
+
+.color-option {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: .25rem solid var(--input-stroke);
+  transition: border-color 0.2s;
+}
+

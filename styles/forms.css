@@ -25,3 +25,8 @@ fieldset + fieldset {
   margin-top: 3rem;
 }
 
+.actions-wrapper {
+  margin-top: 3rem;
+  margin-left: auto;
+}
+

@@ -91,16 +91,60 @@
 
         <fieldset class="customization">
            <legend>
-            <img src="assets/icons/paintbrush-vertical.svg" alt="imagem do calendário">
+            <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
             Personalização
           </legend>
 
           <div class="color-wrapper">
-            <label>Cor principal</label>
+            <span class="group-label">Cor principal</span>
+
             <div class="color-group">
+
               <input type="radio" id="color-blue" name="mainColor" value="blue">
-              <label for="color-blue" class="color-option" style="#59B2FF"></label>
+              <label for="color-blue" class="color-option" style="background-color: #59B2FF;"></label>
+
+              <input type="radio" id="color-periwinkle" name="mainColor" value="periwinkle">
+              <label for="color-periwinkle" class="color-option" style="background-color: #6A59FF;"></label>
+
+              <input type="radio" id="color-purple" name="mainColor" value="purple">
+              <label for="color-purple" class="color-option" style="background-color: #B259FF;"></label>
+
+              <input type="radio" id="color-fuschia" name="mainColor" value="fuschia">
+              <label for="color-fuschia" class="color-option" style="background-color: #FF59F9;"></label>
+
+             <input type="radio" id="color-pink" name="mainColor" value="pink">
+              <label for="color-pink" class="color-option" style="background-color: #FF598B;"></label>
+
+              <input type="radio" id="color-danger" name="mainColor" value="danger">
+              <label for="color-danger" class="color-option" style="background-color: #FF5959;"></label>
+
+              <input type="radio" id="color-orange" name="mainColor" value="orange">
+              <label for="color-orange" class="color-option" style="background-color: #FF8B59;"></label>
+
+              <input type="radio" id="color-yellow" name="mainColor" value="yellow">
+              <label for="color-yellow" class="color-option" style="background-color: #FFCD59;"></label>
+
+              <input type="radio" id="color-yellow-green" name="mainColor" value="yellow-green">
+              <label for="color-yellow-green" class="color-option" style="background-color: #E1FF59;"></label>
+
+              <input type="radio" id="color-green" name="mainColor" value="green">
+              <label for="color-green" class="color-option" style="background-color: #59FF91;"></label>
+
+              <input type="radio" id="color-cyan" name="mainColor" value="cyan">
+              <label for="color-cyan" class="color-option" style="background-color: #59FFF9;"></label>
             </div>
+
+          <div class="theme-wrapper">
+            <span class="event-label">Tema do Evento</span>
+
+            <div class="group-event">
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="aniversario">
+                <img src="" alt="">
+                <span>Aniversário</span>
+              </label>
+
           </div>
         </fieldset>
 
@@ -164,6 +208,13 @@
                  Aceito receber atualizações e promoções por SMS
                </span>
             </label>
+
+            <div class="actions-wrapper">
+              <button class="btn-primary" type="submit">
+                <img src="assets/icons/ticket.svg" alt="">
+                Gerar convite
+              </button>
+            </div>
           
 
         </div>
