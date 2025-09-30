@@ -1,0 +1,61 @@
+.radio-group {
+  display: inline-flex;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio-card {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: .68rem 1rem;
+  background: var(--input-base);
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  color: var(--text-body); 
+  margin: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked + .radio-card {
+  background: var(--shape-hover);
+  border-radius: 0.25rem;
+  color: var(--text-heading); 
+  margin: 0.25rem;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-wrapper.presencial {
+  background-image: url(../../assets/icons/building-1.svg);
+}
+
+.icon-wrapper.online {
+  background-image: url(../../assets/icons/video-1.svg);
+}
+
+input[type="radio"]:checked + .radio-card .icon-wrapper.presencial {
+  background-image: url(../../assets/icons/building-2.svg);
+}
+
+input[type="radio"]:checked + .radio-card .icon-wrapper.online {
+  background-image: url(../../assets/icons/video-2.svg);
+}

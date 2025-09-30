@@ -9,6 +9,7 @@
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
 
+  --danger: #FF5959;
   --pink: #FF598B;
 
   --input-base: #1C1F21;
@@ -52,4 +53,26 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.about-event .flex {
+  gap: 1rem;
+}
+
+.contact .flex {
+  gap: 1rem;
+}
+
+
+
+
+
+
 

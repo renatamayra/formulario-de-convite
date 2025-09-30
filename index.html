@@ -32,63 +32,141 @@
       </div>
 
       <form>
-        <fieldset class="about-event">
-          <img src="assets/icons/calendar.svg" alt="imagem do calendário">
-          <legend>Sobre o evento</legend>
+        <fieldset class="about-event">          
+          <legend>
+            <img src="assets/icons/calendar.svg" alt="imagem do calendário">
+            Sobre o evento
+          </legend>
 
           <div class="input-wrapper">
             <label for="title">Título</label>
-            <input 
-              id="title" 
-              name="title"
-              type="text"
-              placeholder="Nome do evento">
+            <input id="title" name="title" type="text" placeholder="Nome do evento">
           </div>
 
-          <div class="input-wrapper">
-            <label for="start">Início</label>
-            <input 
-              id="start"
-              name="start"
-              type="date"
-              lang="pt-br">
+          <div class="flex">
+            <div class="input-wrapper flex-1">
+              <label for="start">Início</label>
+              <input id="start" name="start" type="text" placeholder="DD/MM/AAAA, --:--">
+            </div>
+        
+            <div class="input-wrapper flex-1">
+              <label for="end">Fim</label>
+              <input id="end" name="end" type="text" placeholder="DD/MM/AAAA, --:--">
+            </div>
           </div>
 
-          <div class="input-wrapper">
-            <label for="end">Fim</label>
-            <input 
-              id="end"
-              name="end"
-              type="date"
-              lang="pt-br">
-          </div>
+          <div class="flex">
+            <div class="radio-wrapper flex-1">
+              <label>Tipo</label>
 
-          <div class="select-wrapper">
-             <label for="type">Tipo</label>
-             <select id="type" name="type">
-              <option value="Presencial"></option>
-              <option value="Online"></option>
-            </select> 
-          </div>
+              <div class="radio-group">
+                <input class="visually-hidden" id="type-presencial" name="type" type="radio" value="Presencial" checked>
+                <label for="type-presencial" class="radio-card">
+                  <span class="icon-wrapper presencial"></span>
+                  Presencial
+                </label> 
 
-          <div class="input-wrapper">
+                <input class="visually-hidden" id="type-online" name="type" type="radio" value="Online">
+                <label for="type-online" class="radio-card">
+                  <span class="icon-wrapper online"></span>
+                  Online
+                </label> 
+              </div>
+            </div>
+      
+          <div class="input-wrapper flex-1">
             <label for="place">Local</label>
-            <input 
-              id=place
-              name=place
-              type="text"
-              placeholder="Link ou endereço">
+            <input id=place name=place type="text" placeholder="Link ou endereço">
           </div>
+        </div>
 
           <div class="textarea-wrapper">
             <label for="description">Descrição</label>
             <textarea name="description" id="description"
-              cols="60" rows="5"
+              cols="60" rows="4"
               placeholder="Escreva sobre os detalhes do evento"
             ></textarea>
           </div>
+        </fieldset>
+
+        <fieldset class="customization">
+           <legend>
+            <img src="assets/icons/paintbrush-vertical.svg" alt="imagem do calendário">
+            Personalização
+          </legend>
+
+          <div class="color-wrapper">
+            <label>Cor principal</label>
+            <div class="color-group">
+              <input type="radio" id="color-blue" name="mainColor" value="blue">
+              <label for="color-blue" class="color-option" style="#59B2FF"></label>
+            </div>
+          </div>
+        </fieldset>
+
+
+        <fieldset class="contact">
+           <legend>
+            <img src="assets/icons/contact.svg" alt="imagem do calendário">
+            Dados para contato
+          </legend>
+
+          <div class="input-wrapper">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Nome completo" required>         
+            <div class="error">
+              <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+              <span>Campo obrigatório</span>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="input-wrapper flex-2">
+             <label for="email">E-mail</label>
+             <input 
+              id="email" 
+              name="email"
+              type="text"
+              placeholder="exemplo@email.com">
+            </div>
+        
+            <div class="input-wrapper flex-1">
+              <label for="phone">Telefone</label>
+              <input id="phone" name="phone" type="text" placeholder="(99) 99999-9999">
+           </div>
+        </div>
 
         </fieldset>
+
+        <div class="terms-wrapper input-wrapper">
+            
+            <label class="checkbox-wrapper" for="terms-1">
+              <input type="checkbox" name="terms" id="terms-1">
+              <span class="checkbox-image" aria-hidden="true"></span>
+              <span class="checkbox-text">
+                Li e concordo com os <strong><a href="#">Termos e Condições</a></strong> e com a <strong><a href="#">Política de Privacidade</a></strong>
+              </span>
+            </label>
+         
+           <label class="checkbox-wrapper" for="terms-2">         
+              <input type="checkbox" name="newsletter-email" id="terms-2">
+              <span class="checkbox-image" aria-hidden="true"></span>
+              <span class="checkbox-text">
+                 Aceito receber atualizações e promoções por e-mail
+              </span>
+            </label>
+       
+       
+            <label class="checkbox-wrapper" for="terms-3">
+              <input type="checkbox" name="newsletter-sms" id="terms-3">
+              <span class="checkbox-image" aria-hidden="true"></span>
+               <span class="checkbox-text">
+                 Aceito receber atualizações e promoções por SMS
+               </span>
+            </label>
+          
+
+        </div>
       </form>
     </main>
 

@@ -1,0 +1,53 @@
+input, textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+
+  padding: .81rem 1rem;
+
+  font: 400 1rem/1.5 var(--font-family);  
+  background: var(--input-base);
+  color: var(--input-placeholder);
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: .75rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: .062rem solid var(--brand-light);
+  outline-offset: .1px;
+}
+
+input[type="date"] {
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+}
+
+input:invalid {
+  border: 1px solid var(--danger);
+}
+
+input:invalid + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.error {
+  display: none;  
+  font: var(--body-xs);
+  color: var(--danger);
+  margin-top: .5rem;
+}
+
+
+
+ 
