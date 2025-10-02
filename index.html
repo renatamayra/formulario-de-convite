@@ -31,7 +31,7 @@
          <h2>Crie seu convite</h2>         
       </div>
 
-      <form>
+      <form class="form-container">
         <fieldset class="about-event">          
           <legend>
             <img src="assets/icons/calendar.svg" alt="imagem do calendário">
@@ -93,11 +93,10 @@
            <legend>
             <img src="assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
             Personalização
-          </legend>
+           </legend>
 
           <div class="color-wrapper">
             <span class="group-label">Cor principal</span>
-
             <div class="color-group">
 
               <input type="radio" id="color-blue" name="mainColor" value="blue">
@@ -133,19 +132,112 @@
               <input type="radio" id="color-cyan" name="mainColor" value="cyan">
               <label for="color-cyan" class="color-option" style="background-color: #59FFF9;"></label>
             </div>
+          </div>
 
           <div class="theme-wrapper">
             <span class="event-label">Tema do Evento</span>
 
-            <div class="group-event">
+            <div id=grid class="group-event grid grid-cols-4">
 
               <label class="event-card">
                 <input type="radio" name="event-theme" value="aniversario">
-                <img src="" alt="">
+                <img src="assets/theme/aniversario.png" alt="Aniversário">
                 <span>Aniversário</span>
               </label>
 
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="infantil">
+                <img src="assets/theme/infantil.png" alt="Infantil">
+                <span>Infantil</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="formatura">
+                <img src="assets/theme/formatura.png" alt="Formatura">
+                <span>Formatura</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="casamento">
+                <img src="assets/theme/casamento.png" alt="Casamento">
+                <span>Casamento</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="cha-de-bebe">
+                <img src="assets/theme/cha de bebe.png" alt="Chá de bebê">
+                <span>Chá de bebê</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="cha-de-panela">
+                <img src="assets/theme/cha de panela.png" alt="Chá de panela">
+                <span>Chá de panela</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="carnaval">
+                <img src="assets/theme/carnaval.png" alt="Carnaval">
+                <span>Carnaval</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="pascoa">
+                <img src="assets/theme/pascoa.png" alt="Páscoa">
+                <span>Páscoa</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="sao-joao">
+                <img src="assets/theme/sao joao.png" alt="São João">
+                <span>São João</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="halloween">
+                <img src="assets/theme/halloween.png" alt="Halloween">
+                <span>Halloween</span>
+              </label>
+
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="natal">
+                <img src="assets/theme/natal.png" alt="Natal">
+                <span>Natal</span>
+              </label>
+              
+              <label class="event-card">
+                <input type="radio" name="event-theme" value="outro">
+                <img src="assets/theme/outro.png" alt="Outro">
+                <span>Outro</span>
+              </label>
+           </div>
           </div>
+
+       <div class="style-file">
+
+          <div class="style-section">
+            <span class="styl-label">Estilo</span>
+            <div id="switch-toggle">
+              <button class="switch"></button>
+              <p>Escuro</p>            
+            </div>
+          </div> 
+
+          <div class="file-section">
+            <span class="cover-photo">Foto de capa</span>
+            <div class="file-actions">
+              <label for="cover-upload" class="btn-upload">
+                 <img src="assets/icons/upload-button-blue.svg" alt="ícone upload blue">
+                 Selecionar
+              </label>
+              <input type="file" id="cover-upload" hidden>
+              <p>Nenhum arquivo selecionado</p>
+          </div>
+        </div>
+
+        </div>
+          
+
         </fieldset>
 
 
@@ -211,7 +303,7 @@
 
             <div class="actions-wrapper">
               <button class="btn-primary" type="submit">
-                <img src="assets/icons/ticket.svg" alt="">
+                <img src="assets/icons/ticket.svg" alt="imagem ticket">
                 Gerar convite
               </button>
             </div>
