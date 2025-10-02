@@ -55,5 +55,11 @@ main {
       margin-bottom: 2.5rem;
     }
   }
+
+  & .color-group {
+    max-width: 31.5rem;
+  }
+
+ 
 }
 

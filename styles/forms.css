@@ -4,6 +4,11 @@ form {
   margin-top: 2.5rem;
 }
 
+.form-container {
+  max-width: 35rem;
+  width: 100%;
+}
+
 fieldset {
   border: none;
 
