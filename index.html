@@ -111,7 +111,7 @@
               <input type="radio" id="color-fuschia" name="mainColor" value="fuschia">
               <label for="color-fuschia" class="color-option" style="background-color: #FF59F9;"></label>
 
-             <input type="radio" id="color-pink" name="mainColor" value="pink">
+             <input type="radio" id="color-pink" name="mainColor" value="pink" checked>
               <label for="color-pink" class="color-option" style="background-color: #FF598B;"></label>
 
               <input type="radio" id="color-danger" name="mainColor" value="danger">
@@ -140,7 +140,7 @@
             <div id=grid class="group-event grid grid-cols-4">
 
               <label class="event-card">
-                <input type="radio" name="event-theme" value="aniversario">
+                <input type="radio" name="event-theme" value="aniversario" checked>
                 <img src="assets/theme/aniversario.png" alt="Aniversário">
                 <span>Aniversário</span>
               </label>
@@ -216,9 +216,11 @@
        <div class="style-file">
 
           <div class="style-section">
-            <span class="styl-label">Estilo</span>
-            <div id="switch-toggle">
+            <span class="style-label">Estilo</span>
+            <div id="switch-toggle" onclick="toggleMode()">
+             <span class="switch-track">
               <button class="switch"></button>
+              </span>
               <p>Escuro</p>            
             </div>
           </div> 
@@ -277,7 +279,7 @@
         <div class="terms-wrapper input-wrapper">
             
             <label class="checkbox-wrapper" for="terms-1">
-              <input type="checkbox" name="terms" id="terms-1">
+              <input type="checkbox" name="terms" id="terms-1" checked>
               <span class="checkbox-image" aria-hidden="true"></span>
               <span class="checkbox-text">
                 Li e concordo com os <strong><a href="#">Termos e Condições</a></strong> e com a <strong><a href="#">Política de Privacidade</a></strong>
@@ -314,5 +316,7 @@
     </main>
 
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
