@@ -49,6 +49,11 @@ body {
   overflow: hidden;
 }
 
+.light {
+  --input-stroke: #F9F9F9;
+  --input-base: #59B2FF;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -81,8 +86,6 @@ img {
 .gap-8 {
   gap: .5rem;
 }
-
-
 
 
 

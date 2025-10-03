@@ -1,5 +1,88 @@
 .style-file {
   display: grid;
-  grid-template-columns: 25% 75%;
-  
+  grid-template-columns: 35% 65%;
 }
+
+.style-section,
+.file-section {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.style-section {
+  & span {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+}
+
+#switch-toggle {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+
+.switch-track {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    background: var(--input-base); 
+    border: 1px solid var(--input-stroke);
+    backdrop-filter: blur (4px);
+    -webkit-backdrop-filter: blur (4px);
+    border-radius: 9999px;
+    padding: 2px;
+}
+
+.switch-track .switch {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  max-width: auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: var(--input-stroke);
+  border: 0;
+  border-radius: 50%;
+  transition: left 0.2s ease;
+  padding: .01rem;
+
+  border: 1px solid blue;
+}
+
+/*TROCAR MODO
+.light .switch-track {
+  right: 0;
+  left: initial;
+}
+
+*/
+
+.file-actions {
+  display: flex;
+  align-items: baseline;
+  gap: .75rem;
+}
+
+.file-actions label {
+  background-color: var(--shape-button);
+  padding: .6rem .5rem;
+  border-radius: .5rem;
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+
+  cursor: pointer;
+}
+
+.file-actions p {
+  margin: 0;
+  font: var(--body-md);
+  font-weight: 200;
+  color: var(--input-placeholder);
+}
+
+

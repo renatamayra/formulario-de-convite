@@ -4,7 +4,7 @@ input, textarea {
   border-radius: 0.5rem;
   border: 1px solid var(--input-stroke);
 
-  padding: .81rem 1rem;
+  padding: .65rem 1rem;
 
   font: 400 1rem/1.5 var(--font-family);  
   background: var(--input-base);
