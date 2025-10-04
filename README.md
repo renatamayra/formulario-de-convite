@@ -13,7 +13,7 @@ Este projeto une meu aprendizado em <strong>HTML</strong> e <strong>CSS</strong>
 </p>
 
 <p align="center">
-  <img alt="Preview do projeto Formulário de Convite" src="../formulario-de-convite/assets/formulario de convite.png" width="100%">
+  <img alt="Preview do projeto Formulário de Convite" src="../formulario-de-convite/assets/formulario-convite.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
