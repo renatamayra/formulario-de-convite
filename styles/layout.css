@@ -44,8 +44,6 @@ main {
   overflow: auto;
   padding: 5rem 8.125rem;
 
-  border: 1px solid red;
-
   & .main-container {
     max-width: 35rem;
   
