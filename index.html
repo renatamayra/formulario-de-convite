@@ -216,14 +216,13 @@
        <div class="style-file">
 
           <div class="style-section">
-            <span class="style-label">Estilo</span>
-            <div id="switch-toggle" onclick="toggleMode()">
-             <span class="switch-track">
-              <button class="switch"></button>
-              </span>
-              <p>Escuro</p>            
-            </div>
-          </div> 
+            <label class="switch">
+              Estilo
+              <input type="checkbox" name="style" id="style">
+              <label for="style" class="slider"></label>
+              <span class="text"></span>
+            </label>
+           </div>       
 
           <div class="file-section">
             <span class="cover-photo">Foto de capa</span>
@@ -316,7 +315,5 @@
     </main>
 
   </div>
-
-  <script src="./script.js"></script>
 </body>
 </html>
