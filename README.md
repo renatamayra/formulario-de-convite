@@ -13,7 +13,7 @@ Este projeto une meu aprendizado em <strong>HTML</strong> e <strong>CSS</strong>
 </p>
 
 <p align="center">
-  <img alt="Preview do projeto Formulário de Convite" src=".github/main-image.jpg" width="100%">
+  <img alt="Preview do projeto Formulário de Convite" src="../formulario-de-convite/assets/formulario de convite.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -23,6 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML5  
 - CSS3  
 - Google Fonts  
+- Figma
 
 ## 💻 Projeto
 
